@@ -67,6 +67,8 @@ pip install --upgrade nvifan -i https://pypi.python.org/simple
 sudo systemctl restart nvifan
 ```
 
+## Systemd服务
+
 ### 安装为服务（推荐）
 
 想把这个工具设置为开机自启的服务吗？

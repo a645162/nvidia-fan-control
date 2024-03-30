@@ -27,14 +27,15 @@ def install():
     if ret[0] != 0:
         print('"nvifan" is not available')
         exit(1)
+    nvifan_path = ret[1].strip()
 
-    print("nvifan Path: " + ret[1])
+    print("nvifan Path: " + nvifan_path)
 
     if not check_sudo():
         print('Please use "sudo nvifan-installer"')
         exit(-1)
 
-    final_text = service_template.format(ret[1]).strip() + "\n"
+    final_text = service_template.format(nvifan_path).strip() + "\n"
 
     # Write To Service
     try:

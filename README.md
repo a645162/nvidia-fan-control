@@ -65,7 +65,7 @@ you can use the following command to restart the service after upgrading.
 sudo systemctl restart nvifan
 ```
 
-### Install as Service(Recommended)
+### Systemd Service(Recommended)
 
 #### Install Service
 
@@ -73,7 +73,7 @@ sudo systemctl restart nvifan
 sudo nvifan-install
 ```
 
-### Uninstall Service
+#### Uninstall Service
 
 ```bash
 sudo nvifan-uninstall

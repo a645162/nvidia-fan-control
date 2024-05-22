@@ -6,8 +6,8 @@ import loguru
 log_dir = "/var/log/nvi"
 
 # Check Log Directory
-if not os.path.exists("/var/log/nvi"):
-    os.mkdir("/var/log/nvi")
+if not os.path.exists(log_dir):
+    os.mkdir(log_dir)
 
 log_path = os.path.join(log_dir, "nvifan.log")
 
